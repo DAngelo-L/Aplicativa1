@@ -1,0 +1,62 @@
+﻿body {
+    /* Otros estilos para el body si los hay */
+}
+
+/*.genero-imagen {
+    max-height: 150px;
+    max-width: 100%;*/ /* Permite que la imagen se ajuste al ancho del contenedor */
+    /*height: auto;*/ /* Mantiene la proporción de la imagen */
+    /*display: block;*/ /* Ocupa todo el ancho disponible */
+    /*margin: 20px auto;*/ /* Centra la imagen horizontalmente */
+/*}*/
+
+
+.texto-genero p { /* Asegura que el párrafo esté dentro de un elemento con la clase texto-genero */
+    margin-block-start: 0; /* Usa margin-block-start para anular el margen superior */
+    margin-bottom: 1rem;
+    height: 18px; /* Este estilo parece innecesario y podría causar problemas */
+}
+
+
+.introduccion {
+    margin-bottom: 50rem; /* Ajusta el valor '2rem' según sea necesario */
+}
+
+.movie-container {
+    display: flex;
+    flex-direction: column; /* Apila la imagen debajo del texto */
+    align-items: center; /* Centra la imagen horizontalmente */
+}
+
+.genero-image {
+    max-width: 50%; /* Permite que la imagen se ajuste al ancho del contenedor */
+    height: max-content; /* Mantiene la proporción de la imagen */
+    margin-top: 4rem; /* Agrega espacio entre el texto y la imagen */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .movie-container {
+        flex-direction: column; /* Apila imagen y texto verticalmente */
+        align-items: center;
+    }
+}
+
+.gradient-button {
+    background-image: linear-gradient(to right, #FF5733, #FFC300); /* Degradado naranja-amarillo */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+
+
